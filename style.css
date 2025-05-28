@@ -1,0 +1,124 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: #FFFFFD;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #030303;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #9a0007;
+    font-weight: 500;
+  }
+
+  header button {
+    margin: 0 20px;
+    text-decoration: none;
+    background-color: #030303;
+    border: none;
+    color: #9a0007;
+    font-weight: 500;
+  }
+
+  header button:hover {
+    color: #F31237
+  }
+  
+  header a:hover {
+    color: #F31237;
+  }
+  
+  section {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+
+  section a{
+    margin: 0 20px;
+    text-decoration: none;
+    color:#9a0007;
+  }
+
+  section a:hover{
+    color: #F31237;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #111;
+  }
+
+  ._feedback {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: #151515;
+}
+
+  ._feedback h2 {
+    margin-bottom: 20px;
+  }
+
+  ._feedback input,
+  ._feedback textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #111;
+    border: none;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  ._feedback button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    margin-top: 10px;
+  }
+
+  ._feedback button:hover {
+    background-color: #111;
+  }
+  
+  footer {
+    background-color: #030303;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+  }
+  
+  footer a {
+    color: #9a0007;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #F31237;
+  }
+  
