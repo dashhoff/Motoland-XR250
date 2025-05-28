@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Motoland XR250 Enduro motoland</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        body.loaded {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,14 +28,17 @@
         <a href="features.html">ОСОБЕННОСТИ</a> | 
         <a href="motoland.html">О КОМПАНИИ</a> | 
         <a href="manual.html">МАНУАЛ</a>
+        
+        <!-- Кнопка управления музыкой -->
+        <button id="music-toggle">♪ Вкл/Выкл музыку</button>
     </header>
 
-    </br>
-    </br>
+    <!-- Аудио элемент -->
+    <audio id="bg-music" loop autoplay>
+        <source src="Need4Speed.wav" type="audio/mpeg">
+    </audio>
 
-    <section>
-        <video autoplay loop muted><source src="video.mp4" type="video/mp4"></video>
-    </section>
+    <video autoplay loop muted><source src="video.mp4" type="video/mp4"></video>
 
     <!-- Описание -->
     <section>
@@ -33,12 +49,31 @@
 
     </br>
 
+    <!-- Обратная связь -->
+    <section id="_feedback">
+        <h2>Обратная связь</h2>
+        <form onsubmit="showAlert();">
+            <label for="_name">Имя:</label><br>
+            <input type="text" id="_name" name="name" required><br><br>
+    
+            <label for="_email">Email:</label><br>
+            <input type="email" id="_email" name="email" required><br><br>
+    
+            <label for="_message">Сообщение:</label><br>
+            <textarea id="_message" name="message" rows="5" required></textarea><br><br>
+    
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
     <!-- Футер -->
     <footer>
         <a href="https://t.me/danila_shalyapin" target="_blank">Telegram</a> |
         <a href="https://vk.com/hah_ti_poiman" target="_blank">VK</a>
         <p><a href="#top">К началу ↑</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
