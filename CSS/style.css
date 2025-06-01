@@ -66,6 +66,44 @@
     color: #111;
   }
 
+._carousel {
+    position: relative;
+    width: 750px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+._carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+._carousel img {
+    width: 750px;
+    flex-shrink: 0;
+}
+
+._carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+._carousel button:first-of-type {
+    left: 10px;
+}
+
+._carousel button:last-of-type {
+    right: 10px;
+}
+
   ._feedback {
     background-color: #111;
     color: white;

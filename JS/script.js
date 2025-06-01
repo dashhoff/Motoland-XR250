@@ -54,3 +54,22 @@ function showAlert() {
     alert("Спасибо, ваше сообщение отправлено!");
 }
 */
+
+let _index = 0;
+const _slideWidth = 750;
+const _total = 6;
+
+function _update() {
+    const _slides = document.getElementById('_slides');
+    _slides.style.transform = `translateX(${-_slideWidth * _index}px)`;
+}
+
+function _next() {
+    _index = (_index + 1) % _total;
+    _update();
+}
+
+function _prev() {
+    _index = (_index - 1 + _total) % _total;
+    _update();
+}
