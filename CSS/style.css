@@ -67,42 +67,34 @@
   }
 
   ._feedback {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px;
+    background-color: #111;
+    color: white;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
-    background-color: #151515;
-}
-
-  ._feedback h2 {
-    margin-bottom: 20px;
+    max-width: 600px;
   }
 
   ._feedback input,
   ._feedback textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    box-sizing: border-box;
-    background-color: #111;
+    margin: 10px 0;
     border: none;
-    font-size: 16px;
-    margin-top: 5px;
+    color: white;
+    background-color: #252525;
   }
 
   ._feedback button {
-    width: 200px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #111;
+    width: 150px;
+    height: 75px;
+    font-size: 25px;
+    background-color: #151515;
     color: white;
     border: none;
-    margin-top: 10px;
+    cursor: pointer;
   }
 
   ._feedback button:hover {
-    background-color: #111;
+    background-color: #252525;
   }
   
   footer {

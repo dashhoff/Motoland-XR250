@@ -37,6 +37,7 @@ function toggleMusic() {
     toggleButton.textContent = music.paused ? "Включить музыку" : "Выключить музыку";
 }
 
+/*
 //Модальное окно обратной связи
 function showAlert() {
     // Получаем значения полей
@@ -52,3 +53,4 @@ function showAlert() {
     // Если все проверки пройдены
     alert("Спасибо, ваше сообщение отправлено!");
 }
+*/

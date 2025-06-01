@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Motoland XR250 Enduro motoland</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
@@ -22,46 +23,68 @@
 
     <!-- Шапка -->
     <header>
-        <a href="index.html">ГЛАВНАЯ</a> | 
+        <a href="../index.html">ГЛАВНАЯ</a> | 
         <a href="description.html">ОПИСАНИЕ</a> | 
         <a href="characteristics.html">ХАРАКТЕРИСТИКИ</a> | 
         <a href="features.html">ОСОБЕННОСТИ</a> | 
         <a href="motoland.html">О КОМПАНИИ</a> | 
         <a href="manual.html">МАНУАЛ</a>
-        
+
         <!-- Кнопка управления музыкой -->
         <button id="music-toggle">♪ Вкл/Выкл музыку</button>
     </header>
 
     <!-- Аудио элемент -->
     <audio id="bg-music" loop autoplay>
-        <source src="Need4Speed.wav" type="audio/mpeg">
+        <source src="../SRC/Need4Speed.wav" type="audio/mpeg">
     </audio>
 
-    <video autoplay loop muted><source src="video.mp4" type="video/mp4"></video>
+    <video autoplay loop muted>
+        <source src="../SRC/video.mp4" type="video/mp4">
+    </video>
 
     <!-- Описание -->
     <section>
         <p>
-            Компания MotoLand вышла на рынок мототехники более 20 лет назад. В настоящее время MotoLand входит в число лидирующих российских компаний, занимающихся продажей мототехники, запчастей и аксессуаров. Сегодня компания предлагает более 150 моделей мототехники для путешествий, развлечений и занятий экстремальными видами спорта
+            Компания MotoLand вышла на рынок мототехники более 20 лет назад. В настоящее время MotoLand входит в число
+            лидирующих российских компаний, занимающихся продажей мототехники, запчастей и аксессуаров. Сегодня компания
+            предлагает более 150 моделей мототехники для путешествий, развлечений и занятий экстремальными видами спорта
         </p>
     </section>
 
     </br>
 
     <!-- Обратная связь -->
-    <section id="_feedback">
+    <!--
+        <section class="_feedback">
         <h2>Обратная связь</h2>
         <form onsubmit="showAlert();">
             <label for="_name">Имя:</label><br>
             <input type="text" id="_name" name="name" required><br><br>
-    
+
             <label for="_email">Email:</label><br>
             <input type="email" id="_email" name="email" required><br><br>
-    
+
             <label for="_message">Сообщение:</label><br>
             <textarea id="_message" name="message" rows="5" required></textarea><br><br>
-    
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    -->
+
+    <section class="_feedback">
+        <h2>Обратная связь</h2>
+        <form action="https://formspree.io/f/xgvywbor" method="POST" onsubmit="showAlert();">
+            <label for="name">Имя:</label><br>
+            <input type="name"  name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="5"></textarea><br><br>
+
             <button type="submit">Отправить</button>
         </form>
     </section>
@@ -69,11 +92,13 @@
     <!-- Футер -->
     <footer>
         <a href="https://t.me/danila_shalyapin" target="_blank">Telegram</a> |
-        <a href="https://vk.com/hah_ti_poiman" target="_blank">VK</a>
+        <a href="https://vk.com/hah_ti_poiman" target="_blank">VK</a> |
+        <a href="about.html">О нас</a>
         <p><a href="#top">К началу ↑</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../JS/script.js"></script>
 
 </body>
+
 </html>
